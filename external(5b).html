@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci</title>
+</head>
+<body>
+
+<script>
+function fibonacci(n) {
+    let a = 0, b = 1, next;
+    document.write(a + " " + b + " ");
+
+    for (let i = 2; i < n; i++) {
+        next = a + b;
+        document.write(next + " ");
+        a = b;
+        b = next;
+    }
+}
+
+let num = parseInt(prompt("Enter number"));
+fibonacci(num);
+</script>
+
+</body>
+</html>

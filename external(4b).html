@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number</title>
+</head>
+<body>
+
+<h2 id="result"></h2>
+
+<script>
+    let a = parseInt(prompt("Enter first number"));
+    let b = parseInt(prompt("Enter second number"));
+    let c = parseInt(prompt("Enter third number"));
+
+    let result = document.getElementById("result");
+
+    if (a === b && b === c) {
+        result.innerHTML = "EQUAL NUMBERS";
+        alert("All numbers are equal");
+    } 
+    else {
+        let max = Math.max(a, b, c);
+        result.innerHTML = "LARGER NUMBER: " + max;
+        alert("Largest number is " + max);
+    }
+</script>
+
+</body>
+</html>
